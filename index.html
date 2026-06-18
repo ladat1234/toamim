@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>טועמים יהדות - שותפות</title>
+<!-- ייבוא ספריית האייקונים -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    .logo-img {
+        max-width: 250px;
+        height: auto;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header {
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        padding: 0 20px;
+    }
+    .header h1 {
+        font-size: 3rem;
+        color: #ffd700;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+        margin-bottom: 15px;
+    }
+    .header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 35px;
+        width: 90%;
+        max-width: 1200px;
+        margin-bottom: 80px;
+    }
+    .donation-card {
+        background: #1c323d; /* צבע אטום ויוקרתי המונע עומס רינדור על הדפדפן */
+        border: 1px solid rgba(255, 215, 0, 0.3);
+        border-radius: 20px;
+        padding: 40px 25px;
+        text-align: center;
+        transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .donation-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(255, 215, 0, 0.9);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    }
+    .card-icon {
+        font-size: 2.5rem;
+        color: #ffd700;
+        margin-bottom: 20px;
+        text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    .card-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+    .card-price {
+        font-size: 1.5rem;
+        color: #ffd700;
+        margin-bottom: 25px;
+        font-weight: bold;
+    }
+    .donate-btn {
+        background: linear-gradient(45deg, #d4af37, #f3e5ab);
+        color: #1a1a1a;
+        text-decoration: none;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: opacity 0.3s, transform 0.2s;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .donate-btn:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <!-- תוכל להעלות לוגו חדש בשם logo.jpeg שיתאים לטועמים יהדות -->
+    <img src="logo.jpeg" alt="לוגו טועמים יהדות" class="logo-img">
+    <h1>טועמים יהדות</h1>
+    <p>שותפים ומשפיעים - בחרו את מסלול התרומה שלכם</p>
+</div>
+
+<div class="container">
+    <div class="donation-card">
+        <i class="fa-solid fa-scroll card-icon"></i>
+        <div class="card-title">הזכרת שם לברכה בכל הסניפים למשך שבוע</div>
+        <div class="card-price">100 ₪</div>
+        <a href="הכנס_קישור_תשלום_כאן" class="donate-btn">לתרומה חד פעמית</a>
+    </div>
+
+    <div class="donation-card">
+        <i class="fa-solid fa-bread-slice card-icon"></i>
+        <div class="card-title">ערב הפרשת חלה כולל חלוקת מזכרות</div>
+        <div class="card-price">800 ₪</div>
+        <a href="הכנס_קישור_תשלום_כאן" class="donate-btn">לתרומה</a>
+    </div>
+
+    <div class="donation-card">
+        <i class="fa-solid fa-utensils card-icon"></i>
+        <div class="card-title">ערב סעודת אמנים</div>
+        <div class="card-price">500 ₪</div>
+        <a href="הכנס_קישור_תשלום_כאן" class="donate-btn">לתרומה</a>
+    </div>
+
+    <div class="donation-card">
+        <i class="fa-solid fa-fire card-icon"></i>
+        <div class="card-title">"אזכרה" השם יוזכר ע"נ בכל הסניפים למשך שבוע</div>
+        <div class="card-price">500 ₪</div>
+        <a href="הכנס_קישור_תשלום_כאן" class="donate-btn">לתרומה</a>
+    </div>
+
+    <div class="donation-card">
+        <i class="fa-solid fa-book-open-reader card-icon"></i>
+        <div class="card-title">חלוקת ספרוני הלכה ללומדות</div>
+        <div class="card-price">200 ₪</div>
+        <a href="הכנס_קישור_תשלום_כאן" class="donate-btn">לתרומה</a>
+    </div>
+
+    <div class="donation-card">
+        <i class="fa-solid fa-mug-hot card-icon"></i>
+        <div class="card-title">כיבוד לשיעור תורה לחודש</div>
+        <div class="card-price">400 ₪</div>
+        <a href="הכנס_קישור_תשלום_כאן" class="donate-btn">לתרומה חודשית</a>
+    </div>
+
+    <div class="donation-card">
+        <i class="fa-solid fa-building-columns card-icon"></i>
+        <div class="card-title">פתיחת סניף חדש של "טועמים יהדות"</div>
+        <div class="card-price">1,600 ₪ לחודש</div>
+        <a href="הכנס_קישור_תשלום_כאן" class="donate-btn">לתרומה חודשית</a>
+    </div>
+
+    <div class="donation-card">
+        <i class="fa-solid fa-hand-holding-heart card-icon"></i>
+        <div class="card-title">תרומה כללית</div>
+        <div class="card-price">סכום פתוח</div>
+        <a href="הכנס_קישור_תשלום_כאן" class="donate-btn">לתרומה</a>
+    </div>
+</div>
+
+</body>
+</html>
